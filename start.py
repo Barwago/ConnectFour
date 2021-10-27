@@ -6,6 +6,6 @@ def creat_board():
 #Matrix with zeros 7x6
   board = np.zeros((6,7))
   return board
-
+#ny
 board = creat_board()
 print (board)
