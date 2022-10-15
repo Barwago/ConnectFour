@@ -126,11 +126,11 @@ def evaluate_sqr(sqr, piece):
    # If we have 3 in row it will always try to block us, but we get less point then:
    # Doesn't affect us even if player becomes opp_piece, remember we can choose position
     if sqr.count(opponent) == 3 and sqr.count(EMPTY) == 1:
-        score -= 180
-
-  # If you want the Robot to block your every move, add this
-  # elif sqr.count(opponent) == 2 and sqr.count(EMPTY) == 2:
-    # score -= 40
+        score -= 250 
+   #If you want the Robot to block your every move, add this
+    elif sqr.count(opponent) == 2 and sqr.count(EMPTY) == 2:
+        score -= 40
+    
     return score
 
 
